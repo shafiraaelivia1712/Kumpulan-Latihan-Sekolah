@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 3 - Sistem Kasir Minimarket</title>
+</head>
+<body>
+    <script>
+        let namaKasir = prompt("Masukkan Nama Kasir:");
+        let namaPembeli = prompt("Masukkan Nama Pembeli:");
+        let totalBelanja = prompt("Masukkan Total Belanja (Rp):");
+        
+        totalBelanja = parseFloat(totalBelanja);
+
+        let diskonPersen = 0;
+        
+        if (totalBelanja >= 150000) {
+            diskonPersen = 15;
+        } else if (totalBelanja >= 75000) {
+            diskonPersen = 10;
+        } else {
+            diskonPersen = 0;
+        }
+
+        let nominalDiskon = (diskonPersen / 100) * totalBelanja;
+        let totalBayarAkhir = totalBelanja - nominalDiskon;
+
+        let garisPembatas = "";
+        for (let i = 1; i <= 35; i++) {
+            garisPembatas += "=";
+        }
+
+        document.write("<h3>STRUK BELANJA MINIMARKET</h3>");
+        
+        document.write(garisPembatas + "<br>");
+        document.write("Nama Kasir   : " + namaKasir + "<br>");
+        document.write("Nama Pembeli : " + namaPembeli + "<br>");
+        
+        document.write(garisPembatas + "<br>");
+        document.write("Total Belanja: Rp " + totalBelanja + "<br>");
+        document.write("Diskon (" + diskonPersen + "%) : Rp " + nominalDiskon + "<br>");
+        document.write("Total Bayar  : Rp " + totalBayarAkhir + "<br>");
+        
+        document.write(garisPembatas + "<br><br>");
+
+        if (totalBayarAkhir >= 100000) {
+            document.write("<i>* Selamat! Anda Mendapatkan Kupon Undian! *</i>");
+        }
+    </script>
+</body>
+</html>

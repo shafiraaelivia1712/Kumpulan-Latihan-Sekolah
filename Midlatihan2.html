@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Diskon Member Toko</h2>
+    <script>
+        let totalBelanja = Number(prompt("Total Belanja (Rp):"));
+        let punyaMember = prompt("Punya Kartu Member? (ya/tidak)").toLowerCase();
+        let diskon = 0;
+
+        if (punyaMember === "ya") {
+            diskon = 0.15 * totalBelanja;
+        } else {
+            diskon = 0;
+        }
+
+        let totalBayar = totalBelanja - diskon;
+
+        document.write("Total Belanja: Rp " + totalBelanja + "<br>");
+        document.write("Diskon: Rp " + diskon + "<br>");
+        document.write("Total Bayar: <b>Rp " + totalBayar + "</b>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Program Kasir Sederhana</h2>
+
+    <script>
+        let namaMakanan = prompt("Masukkan Nama Makanan:");
+        let hargaSatuan = prompt("Masukkan Harga Satuan:");
+        let jumlahPorsi = prompt("Masukkan Jumlah Porsi");
+
+        hargaSatuan = Number(hargaSatuan);
+        jumlahPorsi = Number(jumlahPorsi);
+
+        let totalBayar = hargaSatuan * jumlahPorsi;
+
+        document.write("===============================<br>");
+        document.write("<b>STRUK PEMBELIAN KASIR</b><br>");
+        document.write("===============================<br>");
+        document.write("Nama Makanan : " + namaMakanan + "<br>");
+        document.write("Harga Satuan : Rp " + hargaSatuan + "<br>");
+        document.write("Jumlah Beli : " + jumlahPorsi + " pcs<br>");
+        document.write("-------------------------------<br>");
+        document.write("<b>Total Bayar : Rp " + totalBayar + "</b><br>");
+        document.write("===============================<br>");
+
+    </script>
+</body>
+</html>

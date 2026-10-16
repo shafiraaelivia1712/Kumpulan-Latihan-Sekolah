@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tarif Parkir</h2>
+    <script>
+        let kendaraan = prompt("Jenis Kendaraan(motor/mobil):").toLowerCase();
+        let biaya = 0;
+
+        if (kendaraan === "motor") {
+            biaya = 2000;
+        } else if (kendaraan === "mobil") {
+            biaya = 5000;
+        } else {
+            biaya = 0;
+        }
+
+        document.write("Kendaraan: " + kendaraan + "<br>");
+        document.write("Biaya Parkir: <b>Rp " + biaya + "</b>");
+    </script>
+</body>
+</html>2

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Umur ke Hari</title>
+</head>
+<body>
+    <h2>Program Estimasi Hari Hidup</h2>
+    
+    <p id="hasilOutput"></p>
+
+    <script>
+        let nama = prompt("Masukkan Nama saat ini:");
+        let umur = Number(prompt("Masukkan Umur (Tahun) saat ini:"));
+        let jumlahHari = umur * 365;
+        let pesan = `Halo ${nama}, dengan umur ${umur} tahun, kamu diperkirakan sudah hidup selama ${jumlahHari} hari!`;
+        
+        document.getElementById("hasilOutput").textContent = pesan;
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ucapan Waktu</h2>
+    <script>
+        let jam = Number(prompt("Masukkan jam (0 - 24):"));
+        let ucapan = "";
+
+        if (jam >= 4 && jam <= 10) {
+            ucapan = "Selamat Pagi";
+        } else if (jam > 10 && jam <= 14) {
+            ucapan = "Selamat Siang";
+        } else if (jam > 14 && jam <= 18) {
+            ucapan = "Selamat Sore";
+        } else {
+            ucapan = "Selamat Malam";
+        }
+
+        document.write("Jam: " + jam + "<br>");
+        document.write("<b>" + ucapan + "</b>");
+    </script>
+</body>
+</html>

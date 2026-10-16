@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cek Nilai Angka</h2>
+    <script>
+        let angka = Number(prompt("Masukkan angka:"));
+        let ket = "";
+
+        if (angka > 0) {
+            ket = "Bilangan Positif";
+        } else if (angka < 0) {
+            ket = "Bilangan Negatif";
+        } else {
+            ket = "Angka Nol (0)";
+        }
+
+        document.write("Angka: " + angka + "<br>");
+        document.write("Keterangan: <b>" + ket + "</b>");
+    </script>
+</body>
+</html>

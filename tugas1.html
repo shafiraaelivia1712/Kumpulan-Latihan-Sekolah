@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 1 - Penentuan Grade</title>
+</head>
+<body>
+    <h2>Hasil Penentuan Grade Nilai</h2>
+    
+    <script>
+        let namaSiswa = prompt("Masukkan Nama Siswa:");
+        let nilaiAngka = parseFloat(prompt("Masukkan Nilai Angka (0-100):"));
+        let grade = "";
+
+        if (nilaiAngka >= 85) {
+            grade = "A";
+        } else if (nilaiAngka >= 75) {
+            grade = "B";
+        } else if (nilaiAngka >= 60) {
+            grade = "C";
+        } else {
+            grade = "D";
+        }
+
+        document.write("<p>Nama Siswa: <strong>" + namaSiswa + "</strong></p>");
+        document.write("<p>Nilai Angka: <strong>" + nilaiAngka + "</strong></p>");
+        document.write("<p>Grade: <strong>" + grade + "</strong></p>");
+    </script>
+</body>
+</html>

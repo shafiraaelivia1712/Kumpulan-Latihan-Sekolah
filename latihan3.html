@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Program Kasir Sederhana</h2>
+
+    <script>
+        // 1. Mengambil Input dari Pengguna
+        let namaBarang = prompt("Masukkan Nama Barang:");
+        let hargaBarang = prompt("Masukkan Harga Barang:");
+        let jumlahBeli = prompt("Masukkan Jumlah Barang:");
+
+        // 2. Konversi Tipe Data (Teks -> Angka)
+        // Nilai dari prompt() selalu berbentuk Teks (String).
+        // Kita wajib mengonversinya menjadi Angka (Number) agar bisa dihitung secara matematika.
+        hargaBarang = Number(hargaBarang);
+        jumlahBeli = Number(jumlahBeli);
+
+        // 3. Mengolah Data dengan Operasi Aritmatika
+        let totalBayar = hargaBarang * jumlahBeli;
+
+        // 4. Output / Tampilan Struk
+        document.write("==============================<br>");
+        document.write("<b>STRUK PEMBELIAN KASIR</b><br>");
+        document.write("==============================<br>");
+        document.write("Nama Barang : " + namaBarang + "<br>");
+        document.write("Harga Satuan : Rp " + hargaBarang + "<br>");
+        document.write("Jumlah Beli : " + jumlahBeli + " pcs<br>");
+        document.write("------------------------------<br>");
+        document.write("<b>Total Bayar : Rp " + totalBayar + "</b><br>");
+        document.write("==============================<br>");
+    </script>
+</body>
+</html>

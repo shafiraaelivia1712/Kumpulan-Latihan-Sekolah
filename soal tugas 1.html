@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kasir</title>
+</head>
+<body>
+    <script>
+        let namaPembeli = prompt("Masukkan Nama Pembeli:");
+        let namaBarang1 = prompt("Masukkan Nama Barang ke-1:");
+        let hargabarang1 = Number(prompt("Masukkan harga barang ke-1:"));
+        let namaBarang2 = prompt("Masukkan Nama Barang ke-2:");
+        let hargabarang2 = Number(prompt("Masukkan harga barang ke-2:"));
+        
+        let totalBelanja = hargabarang1 + hargabarang2;
+        let persentaseDiskon = 0;
+
+        // Logika diskon sesuai ketentuan awal
+        if (totalBelanja >= 200000) {
+            persentaseDiskon = 20; 
+        } else if (totalBelanja >= 100000) {
+            persentaseDiskon = 10; 
+        } else {
+            persentaseDiskon = 0;
+        }
+
+        let potonganRupiah = (persentaseDiskon / 100) * totalBelanja;
+        let totalBayarAkhir = totalBelanja - potonganRupiah;
+
+        // Membuat garis ganda (=)
+        let garisGanda = "";
+        for (let i = 1; i <= 45; i++) {
+            garisGanda += "=";
+        }
+
+        // Membuat garis putus-putus (-)
+        let garisPutus = "";
+        for (let i = 1; i <= 45; i++) {
+            garisPutus += "-";
+        }
+
+        // Menampilkan output persis seperti gambar
+        document.write("<h1>Aplikasi kasir elektronik</h1>");
+        document.write("<h2>STRUK TOKO ELEKTRONIK RPL</h2>");
+        document.write("<strong>" + garisPutus + "</strong><br><br>");
+        
+        document.write("Nama pembeli:" + namaPembeli + "<br>");
+        document.write(garisGanda + "<br>");
+        document.write("Nama barang ke1:" + namaBarang1 + "<br>");
+        document.write("harga barang ke1:" + hargabarang1 + "<br>");
+        document.write(garisGanda + "<br>");
+        document.write("Nama barang ke2:" + namaBarang2 + "<br>");
+        document.write("harga barang ke2:" + hargabarang2 + "<br>");
+        document.write(garisGanda + "<br>");
+        document.write("total belanja:" + totalBelanja + "<br>");
+        document.write("Diskon:" + potonganRupiah + "<br>");
+        document.write(garisGanda + "<br>");
+        document.write("total bayar:" + totalBayarAkhir + "<br>");
+    </script>
+</body>
+</html>

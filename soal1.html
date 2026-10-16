@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Program Penghitung Nilai Siswa</h2>
+
+    <script>
+        let nama = prompt("Masukkan Nama Siswa:");
+        let nilaiKehadiran = Number(prompt("Masukkan Nilai Kehadiran:"));
+        let nilaiUjian = Number(prompt("Masukkan Nilai Ujian:"));
+
+        let rataRata = (nilaiKehadiran * 0.4) + (nilaiUjian * 0.6);
+
+        document.write("<b>HASIL PENILAIAN SISWA</b><br><br>");
+        document.write("Nama Siswa : " + nama + "<br>");
+        document.write("Nilai Kehadiran : " + nilaiKehadiran + "<br>");
+        document.write("Nilai Ujian : " + nilaiUjian + "<br>");
+        document.write("<b>Nilai Akhir: " + rataRata + "</b>");
+    </script>
+</body>
+</html>

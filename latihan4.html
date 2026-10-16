@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Program Penghitung Nilai Siswa</h2>
+
+    <script>
+        //Input
+        let nama = prompt("Masukkan Nama Siswa:");
+        let nilaiTugas = Number(prompt("Masukkan Nilai Tugas:"))
+        let nilaiUTS = Number(prompt("Masukkan Nilai UTS:"));
+        let nilaiUAS = Number(prompt("Masukkan Nilai UAS:"));
+
+        //proses
+        let rataRata = (nilaiTugas + nilaiUTS + nilaiUAS) / 3;
+
+        //Output
+        document.write("-----------------------------------<br>");
+        document.write("<b>HASIL PENILAIAN SISWA</b><br><br>");
+        document.write("Nama Siswa : " + nama + "<br>");
+        document.write("Nilai Tugas : " + nilaiTugas + "<br>");
+        document.write("Nilai UTS : " + nilaiUTS + "<br>");
+        document.write("Nilai UAS : " + nilaiUAS + "<br>");
+        document.write("-----------------------------------<br>");
+        document.write("<b>Nilai Rata-Rata: " + rataRata + "</b>");
+    </script>
+</body>
+</html>
