@@ -1,60 +1,62 @@
-# Kumpulan Program Logika & Aplikasi Web Dasar 🌐
+# Kumpulan Proyek Web & Latihan Pemrograman (PBO) 🌐💻
 
-Repositori ini berisi kumpulan program web sederhana yang dibuat untuk tugas sekolah/latihan logika pemrograman web. Setiap folder berisi proyek kecil berbasis HTML dan JavaScript/PHP untuk menyelesaikan studi kasus tertentu.
+Repositori ini berisi kumpulan tugas sekolah, latihan logika web dasar, serta materi **Pemrograman Berbasis Objek (PBO)** dan Ujian MID. Seluruh file telah disatukan dalam satu repositori agar lebih rapi dan terstruktur.
 
 ---
 
-## 📁 Daftar Proyek
+## 📁 Struktur Repositori
 
-Berikut adalah daftar folder proyek yang tersedia di dalam repositori ini:
+Berikut adalah pemetaan folder dan file yang ada di dalam repositori ini:
 
-| No | Nama Folder Proyek | Deskripsi Singkat |
-| :---: | :--- | :--- |
-| 1 | **Cek Ganjil Genap** | Menentukan apakah sebuah angka yang dimasukkan termasuk bilangan ganjil atau genap. |
-| 2 | **Cek Kelayakan Beasiswa** | Sistem pengecekan syarat dan kriteria penerimaan beasiswa. |
-| 3 | **Diskon Belanja** | Menghitung potongan harga berdasarkan total belanjaan. |
-| 4 | **Kartu Portofolio** | Tampilan kartu portofolio diri interaktif. |
-| 5 | **Kartu Profil Organisasi** | Halaman profil informasi seputar organisasi. |
-| 6 | **Membuat SIM** | Pengecekan persyaratan umur dan kualifikasi pembuatan SIM. |
-| 7 | **Password Login** | Tampilan dan simulasi autentikasi halaman masuk (login). |
-| 8 | **Pengecekan Jam Operasional Toko** | Memeriksa apakah toko sedang buka atau tutup berdasarkan jam. |
-| 9 | **Pengecekan Status Pengiriman Paket** | Simulasi pelacakan status keberadaan paket pengiriman. |
+### 1. 🏫 Folder Proyek Sekolah (`/Sekolah`)
+Kumpulan proyek aplikasi web sederhana berbasis logika percabangan dan interaksi antarmuka:
+* **Cek Ganjil Genap** — Menentukan bilangan ganjil atau genap.
+* **Cek Kelayakan Beasiswa** — Pengecekan kriteria beasiswa.
+* **Diskon Belanja** — Perhitungan potongan harga.
+* **Kartu Portofolio** — Tampilan kartu portofolio diri.
+* **Kartu Profil Organisasi** — Tampilan informasi profil organisasi.
+* **Membuat SIM** — Pengecekan kelayakan umur pembuatan SIM.
+* **Password Login** — Simulasi antarmuka halaman login.
+* **Pengecekan Jam Operasional Toko** — Pengecekan status buka/tutup toko.
+* **Pengecekan Status Pengiriman Paket** — Simulasi status pelacakan paket.
+
+---
+
+### 2. 📚 Folder Latihan PBO (`/Latihan_PBO`)
+Kumpulan file latihan dan tugas untuk Pemrograman Berbasis Objek (PBO):
+* **Latihan Dasar:** `Latihan1.html`, `latihan 2.html`, `latihan3.html`, `latihan4.html`, `latihan 5.html`
+* **Soal & Tugas:** `soal1.html`, `soal2.html`, `soal3.html`, `soal tugas 1.html`, `tugas1.html`, `tugas2.html`, `tugas3.html`
+
+---
+
+### 3. 📝 Folder Ujian MID (`/Latihan_PBO/MID`)
+Kumpulan file latihan dan ujian MID PBO:
+* **Mid Latihan:** `Midlatihan1.html`, `Midlatihan2.html`, `Midlatihan3.html`, `Midlatihan4.html`
+* **NotePad Tasks:**
+  * `MID/NotePad/1/NotePadindex.html`
+  * `MID/NotePad/2/NotePadindex2.html`
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan
 
-* **HTML5** — Struktur dasar halaman web.
-* **CSS3** — Penataan tampilan dan styling antarmuka.
-* **JavaScript / PHP** — Logika pemrosesan kondisi dan percabangan.
+* **HTML5** — Meta-struktur halaman web.
+* **CSS3** — Styling dan tata letak tampilan antarmuka.
+* **JavaScript / PHP** — Logika sistem, manipulasi DOM, dan pemrosesan data.
 
 ---
 
-## 🚀 Cara Menjalankan Proyek
+## 🚀 Cara Menjalankan File
 
 1. **Clone repositori ini:**
    ```bash
-   git clone https://github.com/username-anda/nama-repo.git
+   git clone https://github.com/username-anda/nama-repositori-baru.git
    ```
 
-2. **Buka folder proyek:**
-   Pilih dan masuk ke salah satu folder proyek yang ingin dijalankan.
-
-3. **Jalankan program:**
-   * **HTML/JS:** Buka file `.html` secara langsung dengan klik dua kali atau *drag and drop* ke browser Anda (Chrome, Edge, Firefox).
-   * **PHP (jika ada):** Jalankan folder melalui *Local Server* seperti **XAMPP** atau **Laragon** (masukkan folder ke `htdocs` / `www`).
+2. **Jalankan File Proyek:**
+   * Buka folder yang diinginkan (`Sekolah`, `Latihan_PBO`, atau `MID`).
+   * Klik dua kali pada file `.html` (seperti `latihan1.html` atau `NotePadindex.html`) untuk membukanya langsung di browser seperti Chrome, Edge, atau Firefox.
 
 ---
 
-## 📷 Tampilan Program
-
-### Contoh: Cek Ganjil / Genap
-```text
-Cek Ganjil / Genap
-Angka: 2131
-Jenis: Bilangan Ganjil
-```
-
----
-
-*Dikembangkan untuk tugas dan latihan dasar pemrograman web.*
+*Dikembangkan untuk dokumentasi tugas sekolah dan pembelajaran Pemrograman Web / PBO.*
