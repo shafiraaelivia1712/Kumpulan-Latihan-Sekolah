@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cek Pembuatan SIM</h2>
+    <script>
+        let nama = prompt("Masukkan Nama:");
+        let usia = Number(prompt("Masukan Usia:"));
+        let status = "";
+
+        if (usia >= 17) {
+            status = "Memenuhi syarat membuat SIM";
+        } else {
+            status = "Belum cukup umur (Minimal 17 tahun)";
+        }
+
+        document.write("Nama: " + nama + "<br>");
+        document.write("Status: <b>" + status + "</b>");
+    </script>
+</body>
+</html>

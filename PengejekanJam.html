@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pengecekan Jam Operasional Toko</h2>
+    <script>
+        let jam = Number(prompt("Jam Kunjungan : "));
+        let status = "";
+
+        if (jam >= 8 && jam <= 17) {
+            status = "Toko Terbuka";
+        } else {
+            status = "Toko Tertutup";
+        }
+
+        document.write("Jam Kujungan : " + jam + "<br>");
+        document.write("Status : " + status + "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pengecekan Status Pengiriman Paket</h2>
+    <script>
+        let jarak = Number(prompt("Masukkan Jarak Pengiriman : "));
+        let status = "";
+
+        if (jarak <= 5) {
+            status = "Gratis Ongkir (Rp0)";
+        } else {
+            status = "Kena Biaya Pengiriman (Rp15.000)";
+        }
+
+        document.write("Jarak Pengiriman : " + jarak + "<br>");
+        document.write("Status : <b>" + status + "</b>");
+    </script>
+</body>
+</html>
