@@ -19,6 +19,8 @@ Kumpulan proyek aplikasi web sederhana berbasis logika percabangan dan interaksi
 * **Password Login** — Simulasi antarmuka halaman login.
 * **Pengecekan Jam Operasional Toko** — Pengecekan status buka/tutup toko.
 * **Pengecekan Status Pengiriman Paket** — Simulasi status pelacakan paket.
+* **Penentu Kategori Atlet** — Menentukan Kategori Atlet Dari Umur.
+* **Diskon Tiket Masuk Tempat Wisata** — Perhitungan potongan harga tiket masuk tempat wisata.
 
 ---
 
