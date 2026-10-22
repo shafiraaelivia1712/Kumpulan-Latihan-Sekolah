@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Penentu Kategori Atlet Berdasarkan Usia</h2>
+    <script>
+        let nama = prompt("Masukkan Nama Atlet : ");
+        let usia = Number(prompt("Masukkan Usia Atlet : "));
+        let kategori = "";
+
+        if (usia < 6 ) {
+            kategori = "Masih Anak Anak";
+        } else if (usia >= 6 && usia <= 12) {
+            kategori = "Junior";
+        } else if (usia >= 13 && usia <= 19) {
+            kategori = "Remaja";
+        } else {
+            kategori = "Senior"
+        }
+
+        document.write("Nama Atlet : " + nama + "<br>");
+        document.write("Usia Atlet : " + usia + "<br>");
+        document.write("Kategori Atlet : <b>" + kategori + "</b><br>");
+    </script>
+</body>
+</html>

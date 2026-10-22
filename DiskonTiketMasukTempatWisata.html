@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Penentu Diskon Tiket Masuk Tempat Wisata Berdasarkan Hari</h2>
+    <script>
+        let hari = prompt("Massukkan Hari : ");
+        let hasil = "";
+        let hargaTiket = 40000;
+
+        if (hari == "senin" || hari == "selasa" || hari == "rabu" || hari == "kamis") {
+            hasil = hargaTiket;
+        } else if (hari == "jumat") {
+            hasil = hargaTiket - hargaTiket * 0.2;
+        } else if (hari == "sabtu" || hari == "minggu") {
+            hasil = hargaTiket;
+        } else {
+            hasil = "Hari Tidak Valid";
+        }
+
+        document.write("Hari : " + hari + "<br>");
+        document.write("Harga Tiket : Rp. " + hargaTiket + "<br>");
+        document.write("Hasil : <b>" + hasil + "</b><br>");
+    </script>
+</body>
+</html>
