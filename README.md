@@ -21,7 +21,7 @@ Kumpulan proyek aplikasi web sederhana berbasis logika percabangan dan interaksi
 * **Pengecekan Status Pengiriman Paket** — Simulasi status pelacakan paket.
 * **Penentu Kategori Atlet** — Menentukan Kategori Atlet Dari Umur.
 * **Diskon Tiket Masuk Tempat Wisata** — Perhitungan potongan harga tiket masuk tempat wisata.
-* **Simulasi Penghitungan Tagihan Penggunaan Air Bersih.
+* **Simulasi Penghitungan Tagihan Penggunaan Air Bersih** — Perhitungan Total Tagihan Akhir Pelanggan.
 
 ---
 
