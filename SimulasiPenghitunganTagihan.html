@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Simulasi Penghitungan Tagihan Penggunaan Air Bersih (PDAM)</h2>
+    <script>
+        let PemakaianAir = Number(prompt("Masukkan jumlah pemakaian air (dalam m3): "));
+        let TarifDenda = 5000;
+        let Tagihan = PemakaianAir * TarifDenda;
+
+        if (PemakaianAir > 20) {
+            TarifDenda = 15000;
+        } else if (PemakaianAir <= 20) {
+            TarifDenda = 5000;
+        } else {
+            TarifDenda = "Tidak ada denda";
+        }
+
+        document.write("Pemakaian Air : " + PemakaianAir + " m3<br>");
+        document.write("Tarif Denda : " + TarifDenda + "<br>");
+        document.write("Tagihan : " + Tagihan);
+    </script>
+</body>
+</html>
